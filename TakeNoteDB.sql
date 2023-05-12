@@ -1,9 +1,10 @@
 Create Database TakeNoteDB
-create table notes
+create table Note
 (
-id int primary key identity,
-title varchar(50) not null,
-description varchar(500) not null,
-date datetime not null
+Id int identity(1,1) Primary key,
+Title varchar(60),
+Description varchar(50),
+Date datetime
 ) 
-select * from notes
+Drop table Note
+select * from Note
